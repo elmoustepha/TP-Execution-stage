@@ -1,0 +1,235 @@
+div.clock {
+    width: 12%; /* Largeur du bloc horloge */
+    color: #161616; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    font-size: 3rem; /* Taille de la police */
+    display: flex; /* Utilisation de flexbox */
+    float: left; /* Flottant à gauche */
+    padding: 5px 8px; /* Espacement intérieur */
+    border-radius: 5px; /* Bordure arrondie */
+}
+
+div.timer {
+    color: #cfcdcd; /* Couleur du texte */
+    border-radius: 10px; /* Bordure arrondie */
+    width: 17%; /* Largeur du bloc minuterie */
+    position: absolute; /* Position absolue */
+    transform: translate(200%); /* Translation */
+    padding: 5px 10px; /* Espacement intérieur */
+}
+
+h1 {
+    font-style: italic; /* Style de la police en italique */
+    text-align: center; /* Alignement du texte */
+    font-size: 30px; /* Taille de la police */
+    color: rgb(35, 36, 35); /* Couleur du texte */
+}
+
+div#countdown {
+    background-color: #252525; /* Couleur de fond */
+    text-align: center; /* Alignement du texte */
+    border-radius: 5px; /* Bordure arrondie */
+    padding: 5px 10px; /* Espacement intérieur */
+    color: red; /* Couleur du texte */
+    margin: 0px 0px 0px 50px; /* Marge */
+    width: 50%; /* Largeur du bloc */
+}
+
+div.Changementdefond {
+    width: 25%; /* Largeur du bloc */
+    border-radius: 5px; /* Bordure arrondie */
+    font-style: italic; /* Style de la police en italique */
+    text-align: center; /* Alignement du texte */
+    padding: 5px 6px; /* Espacement intérieur */
+    float: right; /* Flottant à droite */
+}
+
+input.changeinput {
+    margin: 6px 15px; /* Marge */
+    padding: 6px 14px; /* Espacement intérieur */
+    border-radius: 5px; /* Bordure arrondie */
+}
+
+button.button {
+    background-color: rgb(139, 139, 139); /* Couleur de fond */
+    color: #e0dfdf; /* Couleur du texte */
+    border-radius: 5px; /* Bordure arrondie */
+    padding: 10px; /* Espacement intérieur */
+    cursor: pointer; /* Curseur */
+}
+
+button.button:active {
+    background-color: #f5170f; /* Couleur de fond au clic */
+}
+
+div.voice {
+    padding: 5px; /* Espacement intérieur */
+    border-radius: 10px; /* Bordure arrondie */
+    text-align: center; /* Alignement du texte */
+    width: 25%; /* Largeur du bloc */
+    float: left; /* Flottant à gauche */
+}
+
+textarea {
+    width: 80%; /* Largeur du champ de texte */
+    height: 56%; /* Hauteur du champ de texte */
+    padding: 10px 3px; /* Espacement intérieur */
+    border-radius: 10px; /* Bordure arrondie */
+    font-size: 16px; /* Taille de la police */
+}
+
+button.parler-btn {
+    padding: 6px 10px; /* Espacement intérieur */
+    background-color: #202020; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 8px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur */
+    font-size: 16px; /* Taille de la police */
+}
+
+button.parler-btn:active {
+    background-color: #fd2c48; /* Couleur de fond au clic */
+}
+
+div.liste {
+    width: 38%; /* Largeur du bloc */
+    padding: 5px; /* Espacement intérieur */
+    border-radius: 5px; /* Bordure arrondie */
+    position: absolute; /* Position absolue */
+    transform: translate(65%, 0%); /* Translation */
+}
+
+
+
+
+input.tacheinput {
+    width: 55%; /* largeur */
+    padding: 10px; /* Espacement intérieur */
+    border-radius: 8px; /* Bordure arrondie */
+}
+
+button.ajouter-btn {
+    padding: 10px; /* Espacement intérieur */
+    background-color: #022b02; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 8px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur */
+}
+
+button.ajouter-btn:active {
+    background-color: #213088; /* Couleur de fond au clic */
+}
+
+ul {
+    list-style: none; /* Style de liste */
+    padding: 0; /* Réinitialisation du padding */
+}
+
+li {
+    padding: 6px; /* Espacement intérieur */
+    color: #1f1f1f; /* Couleur du texte */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Espacement entre les éléments */
+}
+
+li .delete {
+    background-color: #dc3545; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 4px; /* Espacement intérieur */
+    border-radius: 6px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur */
+}
+
+.delete:active {
+    background-color: #492cc9; /* Couleur de fond au clic */
+}
+
+nav.paragrph2 {
+    float: right; /* Flottant à droite */
+    width: 37%; /* Largeur du bloc */
+    height: 40%; /* Hauteur du bloc */
+}
+
+div.filter-buttons {
+    text-align: center; /* Alignement du texte */
+}
+
+button.filter-btn {
+    background-color: #f1f1f1; /* Couleur de fond */
+    padding: 8px 12px; /* Espacement intérieur */
+    border-radius: 6px; /* Bordure arrondie */
+    margin: 8px; /* Marge */
+    cursor: pointer; /* Curseur */
+}
+
+button.filter-btn:active {
+    background-color: #f5170f; /* Couleur de fond au clic */
+}
+
+div.filter-div {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Alignement du contenu */
+    flex-wrap: wrap; /* Enveloppement des éléments */
+}
+
+div.filterDiv {
+    display: none; /* Masquage par défaut */
+    width: 100px; /* Largeur du bloc */
+    height: 100px; /* Hauteur du bloc */
+    margin: 10px; /* Marge */
+    background-color: blue; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    line-height: 100px; /* Hauteur de ligne */
+}
+
+nav.paragrph3 {
+    text-align: center; /* Alignement du texte */
+    position: absolute; /* Position absolue */
+    padding: 2px; /* Espacement intérieur */
+    transform: translate(90%, 30%); /* Translation */
+}
+
+#openPopupBtn {
+    background-color: #3f3e3e; /* Couleur de fond */
+    color: #fefefe; /* Couleur du texte */
+    padding: 10px; /* Espacement intérieur */
+    border-radius: 6px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur */
+}
+
+#openPopupBtn:active {
+    background-color: #d9534f; /* Couleur de fond au clic */
+}
+
+.popup {
+    display: none; /* Masquage par défaut */
+    position: fixed; /* Position fixe */
+    width: 100%; /* Largeur maximale */
+    height: 100%; /* Hauteur maximale */
+}
+
+.popup-content {
+    background-color: #fefefe; /* Couleur de fond */
+    margin: 15% auto; /* Marge */
+    padding: 20px; /* Espacement intérieur */
+    position: absolute; /* Position absolue */
+    transform: translate(30%, -600%); /* Translation */
+    border: 1px solid #888; /* Bordure */
+    width: 60%; /* Largeur du contenu */
+}
+
+.close-btn {
+    color: #aaa; /* Couleur du texte */
+    float: right; /* Flottant à droite */
+    font-size: 28px; /* Taille de la police */
+    cursor: pointer; /* Curseur */
+}
+
+.close-btn:hover {
+    color: black; /* Couleur du texte au survol */
+}
+
+.popup.spectacle {
+    display: block; /* Affichage du popup */
+}

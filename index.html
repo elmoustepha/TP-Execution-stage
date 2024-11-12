@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="tpstage.css"> 
+
+    
+<title>Ma page web</title> 
+</head>
+<body>
+
+ <!--  1-Digital Clock    -->
+<div class="clock">
+    <!-- Contenu dynamique : affichage de l'heure -->
+    <div id="time"></div> 
+</div>
+
+<!-- 2-Countdown Timer-->
+
+<div class="timer">
+    <h1>Compte à rebours</h1>
+    <!-- Contenu dynamique : affichage du compte à rebours -->
+    <div id="countdown"></div> 
+</div>
+
+<!-- 3-Hex Colour Background Change -->
+
+<div class="Changementdefond">
+    <h1>Bienvenue sur ma page !</h1>
+    <input class="changeinput" type="text" id="colorInput" placeholder="Entrez la couleur en anglais">
+    <br>
+    <!-- Bouton pour changer la couleur de fond -->
+    <button class="button" onclick="changefond()">Changement de couleur de fond</button>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br>
+
+<!-- 4-Speech Detection -->
+
+<div class="voice">
+    <h1>Reconnaissance vocale</h1>
+    <!-- Zone de texte pour l'affichage du message vocal -->
+    <textarea id="result" placeholder="Votre message vocal est ici.."></textarea> 
+    <br>
+    <!-- Bouton pour activer la reconnaissance vocale -->
+    <button class="parler-btn" onclick="voice()">Cliquez pour parler</button> 
+</div>
+
+<!--  5-To-Do List -->
+
+<div class="liste">
+    <h1>Liste de choses à faire</h1>
+    <input class="tacheinput" type="text" id="taskInput" placeholder="Saisir une nouvelle tâche">
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <!-- Bouton pour ajouter une nouvelle tâche -->
+    <button class="ajouter-btn" id="addTaskBtn" onclick="addTask()">Ajouter une tâche</button> 
+    <!-- Liste des tâches à afficher -->
+    <ul id="taskList"></ul> 
+</div>
+
+ <!--  6-Webpage Filter -->
+
+<nav class="paragrph2">
+    <div class="filter-buttons">
+        <!-- Bouton de filtre pour afficher tous les travaux -->
+        <button class="filter-btn" onclick="filterSelection('all')">All Work</button> 
+        <!-- Bouton de filtre pour afficher les travaux web -->
+        <button class="filter-btn" onclick="filterSelection('web')">Web</button> 
+        <!-- Bouton de filtre pour afficher les travaux graphiques -->
+        <button class="filter-btn" onclick="filterSelection('graphic')">Graphic</button> 
+        <!-- Bouton de filtre pour afficher les travaux de marketing -->
+        <button class="filter-btn" onclick="filterSelection('marketing')">Marketing</button> 
+    </div>
+    <div class="filter-div">
+        <!-- Contenu filtré à afficher en fonction des filtres sélectionnés -->
+        <div class="filterDiv graphic">Graphic</div>
+        <div class="filterDiv graphic">Graphic</div>
+        <div class="filterDiv web">Web</div>
+        <div class="filterDiv graphic">Graphic</div>
+        <div class="filterDiv marketing">Marketing</div>
+        <div class="filterDiv web">Web</div>
+        <div class="filterDiv marketing">Marketing</div>
+    </div>
+</nav>
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br>
+ <!--  7-Popup Message Generation -->
+<nav class="paragrph3">
+    <h1>Génération de messages contextuels</h1>
+    <!-- Bouton pour ouvrir le popup -->
+    <button id="openPopupBtn" onclick="showPopup()">Open Popup</button> 
+    
+    <div id="popupContainer" class="popup">
+        <div class="popup-content">
+            <!-- Bouton pour fermer le popup -->
+            <span class="close-btn" onclick="hidePopup()">×</span> 
+            <!-- Contenu du popup -->
+            <p>Ceci est un message contextuel !</p> 
+        </div>
+    </div>
+</nav>
+
+<script src="tpstage.js"></script> 
+
+</body>
+</html>
