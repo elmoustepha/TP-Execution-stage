@@ -6,12 +6,10 @@ div.clock {
     display: flex; /* Utilisation de flexbox */
     float: left; /* Flottant à gauche */
     padding: 5px 8px; /* Espacement intérieur */
-    border-radius: 5px; /* Bordure arrondie */
 }
 
 div.timer {
     color: #cfcdcd; /* Couleur du texte */
-    border-radius: 10px; /* Bordure arrondie */
     width: 17%; /* Largeur du bloc minuterie */
     position: absolute; /* Position absolue */
     transform: translate(200%); /* Translation */
@@ -26,13 +24,13 @@ h1 {
 }
 
 div#countdown {
-    background-color: #252525; /* Couleur de fond */
+    background-color: #2c2c2c; /* Couleur de fond */
     text-align: center; /* Alignement du texte */
     border-radius: 5px; /* Bordure arrondie */
     padding: 5px 10px; /* Espacement intérieur */
     color: red; /* Couleur du texte */
     margin: 0px 0px 0px 50px; /* Marge */
-    width: 50%; /* Largeur du bloc */
+    width: 60%; /* Largeur du bloc */
 }
 
 div.Changementdefond {
@@ -173,10 +171,11 @@ div.filter-div {
 }
 
 div.filterDiv {
-    display: none; /* Masquage par défaut */
-    width: 100px; /* Largeur du bloc */
-    height: 100px; /* Hauteur du bloc */
+    width: 25vw; /* Largeur du bloc */
+    height: 25vw; /* Hauteur du bloc */
     margin: 10px; /* Marge */
+    max-width: 100px;
+    max-height: 100px;
     background-color: blue; /* Couleur de fond */
     color: white; /* Couleur du texte */
     text-align: center; /* Alignement du texte */
@@ -185,9 +184,10 @@ div.filterDiv {
 
 nav.paragrph3 {
     text-align: center; /* Alignement du texte */
-    position: absolute; /* Position absolue */
+    position: relative; /* Position absolue */
     padding: 2px; /* Espacement intérieur */
-    transform: translate(90%, 30%); /* Translation */
+    transform: none; /* Translation */
+    margin-top: 20px;
 }
 
 #openPopupBtn {
@@ -203,10 +203,13 @@ nav.paragrph3 {
 }
 
 .popup {
-    display: none; /* Masquage par défaut */
-    position: fixed; /* Position fixe */
-    width: 100%; /* Largeur maximale */
-    height: 100%; /* Hauteur maximale */
+    /* Styles pour la fenêtre popup */
+    display: none; /* Masquage par défaut, la popup est cachée */
+    position: fixed; /* Position fixe pour rester en place lors du défilement */
+    width: 50%; /* Largeur de la popup à 50% de la fenêtre */
+    height: 100%; /* Hauteur maximale de la popup à 100% de la fenêtre */
+    top: 0; /* Positionnement en haut de la fenêtre */
+    left: 30%; /* Décalage de 30% à partir de la gauche de la fenêtre */
 }
 
 .popup-content {
@@ -214,7 +217,7 @@ nav.paragrph3 {
     margin: 15% auto; /* Marge */
     padding: 20px; /* Espacement intérieur */
     position: absolute; /* Position absolue */
-    transform: translate(30%, -600%); /* Translation */
+    transform: translate(0,0); /* Translation */
     border: 1px solid #888; /* Bordure */
     width: 60%; /* Largeur du contenu */
 }
@@ -232,4 +235,45 @@ nav.paragrph3 {
 
 .popup.spectacle {
     display: block; /* Affichage du popup */
+}
+
+
+@media(max-width: 768px) {
+    /* Styles appliqués pour les écrans de petite taille (moins de 768px) */
+    
+    div.clock, div.timer, div.voice, div.Changementdefond, div.liste, nav.paragrph2 {
+        /* Ajustement de la largeur et suppression du flottement pour les blocs */
+        width: 100%; /* Largeur complète pour chaque bloc */
+        float: none; /* Suppression du flottement */
+        position: relative; /* Positionnement relatif pour un meilleur contrôle */
+        transform: none; /* Suppression de toute transformation */
+        margin: 10px 0; /* Marge verticale pour espacer les blocs */
+    }
+    
+    div#countdown {
+        /* Ajustement du bloc de compte à rebours */
+        width: 90%; /* Largeur de 90% pour le compte à rebours */
+        margin: 10px 0; /* Marge verticale pour espacer le bloc */
+    }
+    
+    div.filterDiv {
+        /* Ajustement des blocs de filtre */
+        width: 40vw; /* Largeur de 40% de la largeur de la fenêtre */
+        height: 40vw; /* Hauteur de 40% de la largeur de la fenêtre */
+        max-width: 100px; /* Largeur maximale de 100px */
+        max-height: 100px; /* Hauteur maximale de 100px */
+    }
+    
+    .popup-content {
+        /* Ajustement du contenu de la fenêtre popup */
+        width: 90%; /* Largeur de 90% pour le contenu de la popup */
+        margin: 30% auto; /* Marge verticale de 30% et centrage horizontal */
+    }
+    
+    nav.paragrph3 {
+        /* Ajustement de la navigation pour la section 3 */
+        position: relative; /* Positionnement relatif pour un meilleur contrôle */
+        transform: none; /* Suppression de toute transformation */
+        margin: 10px 0; /* Marge verticale pour espacer la navigation */
+    }
 }
