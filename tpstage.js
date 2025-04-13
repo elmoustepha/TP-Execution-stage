@@ -16,7 +16,7 @@ function myTime() {
 // 2-Countdown Timer :
 
 // Définir la date et l'heure de fin pour le compte à rebours
-var limitedate = new Date("Jun 27, 2024 14:34:00").getTime();
+var limitedate = new Date("01/01/2026 8:30:00").getTime();
 
 // Initialiser le compte à rebours qui s'exécute toutes les secondes
 var x = setInterval(function() {
